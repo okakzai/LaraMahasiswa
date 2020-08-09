@@ -56,7 +56,7 @@ https://www.youtube.com/watch?v=KtUNSjXMK1U&list=PLFIM0718LjIX-xNEj9bSBuDmPw9FWG
 3. Masuk ke terminal hosting lewat SSH
 4. Clone aplikasi laravel di Github.com ke hosting lewat SSH (Putty): 'git clone https://github.com/okakzai/LaraMahasiswa.git'
 5. Hapus folder 'laramahasiswa.didinstudio.com': 'rm laramahasiswa.didinstudio.com -rf'
-6. Buat 'symbolic link': 'ln -s /home/didinst1/LaraMahasiswa/public /home/didinst1/laramahasiswa.didinstudio.com'
+6. Buat 'symbolic link': 'ln -s /home/username/LaraMahasiswa/public /home/username/laramahasiswa.didinstudio.com'
 7. Download vendor untuk LaraMahasiswa: ''composer install'
 8. Buat file .env: 'cp .env.example .env'
 9. Edit file .env: 'nano .env' kemudian keluar 'CTRL+o -> Enter -> CTRL+x'
