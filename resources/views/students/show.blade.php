@@ -13,12 +13,12 @@
 				    <p class="card-text">{{$student->jurusan}}</p>
 				    
 				    <a href="{{$student->id}}/edit" class="btn btn-primary">Edit</a>
-				    <form action="/students/{{$student->id}}" method="POST" class="d-inline">
+				    <form action="{{ url('/students') }}/{{$student->id}}" method="POST" class="d-inline">
 				    	@method('delete')
 				    	@csrf
 				    	<button type="submit" class="btn btn-danger">Delete</button>
 					</form>
-				    <a href="/students" class="card-link">Kembali</a>
+				    <a href="{{ url('/students') }}" class="card-link">Kembali</a>
 				  </div>
 			</div>
         </div>

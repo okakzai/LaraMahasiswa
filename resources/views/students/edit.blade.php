@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-8">  
           <h1 class="mt-3">Form Ubah Data Mahasiswa</h1>
-			<form method="POST" action="/students/{{$student->id}}">
+			<form method="POST" action="{{ url('/students') }}/{{$student->id}}">
 				@method('patch')
 				@csrf
 				<div class="form-group">
