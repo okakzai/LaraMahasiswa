@@ -1,0 +1,64 @@
+Tahap 1
+Link Tutorial
+https://www.youtube.com/watch?v=eRZFGSCkAnw&list=PLFIM0718LjIX-xNEj9bSBuDmPw9FWGMgF&index=1
+2. Buka CMD dan ketik perintah 'cd \xampp73\htdocs\
+3.a. 'composer create-project --prefer-dist laravel/laravel cobaLaravel' (LAMA) ATAU
+3.b.1. 'composer global require laravel/installer' (CEPAT)
+3.b.2. 'laravel new cobaLaravel' (CEPAT)
+4. Membuat file baru 'index.blade.php' di folder '/resources/views'
+5. Membuat file baru 'about.blade.php' di folder '/resources/views'
+6. Edit file 'web.php' di folder '/routes'
+7. Buat folder baru 'layout' di folder '/resources/views'
+8. Buat file baru 'main.blade.php' di folder '/resources/views/layout'
+9. Edit file 'index.blade.php' di folder '/resources/views'
+10. Edit file 'about.blade.php' di folder '/resources/views'
+
+Tahap 2
+Link Tutorial
+https://www.youtube.com/watch?v=IrR1Vic4onQ&list=PLFIM0718LjIX-xNEj9bSBuDmPw9FWGMgF&index=2
+1. Edit file 'main.blade.php' di folder '/resources/views/layout'
+2. Edit file 'web.php' di folder '/routes'
+3. Membuat file baru 'PagesController.php' di folder '/app/Http/Controllers'
+4. Membuat file controller baru lewat CMD 'php artisan make:controller MahasiswaController --resource'
+5. Buat folder baru 'mahasiswa' di folder '/resources/views'
+6. Buat file baru 'index.blade.php' di folder '/resources/views/mahasiswa'
+7. Edit file 'MahasiswaController.php' di folder '/app/Http/Controllers'
+8. Buat database 'laramahasiswa' dan tabel 'mahasiswa'
+9. Edit file '.env'
+10. Edit file 'AppServiceProvider.php' di folder '/app/Providers'
+11. Buat migrasi di CMD 'php artisan make:migration create_students_table'
+12. Edit file migrasi 'create_students_table' di folder '/database/migrations'
+13. Lakukan migrasi di CMD 'php artisan migrate'
+14. Edit file 'MahasiswaController.php' di folder '/app/Http/Controllers'
+15. Membuat model di CMD 'php artisan make:model Student'
+16. Edit file 'MahasiswaController.php' di folder '/app/Http/Controllers'
+
+Tahap 3
+Link Tutorial
+https://youtu.be/6Teor-8GIoM?list=PLFIM0718LjIX-xNEj9bSBuDmPw9FWGMgF&index=3
+1. Buat MVC Student menggunakan CMD 'php artisan make:controller StudentsController -r -m Student'
+2. Buat form tambah data
+3. Mengamankan form dari CRSF
+4. Buat notifikasi
+5. Buat validasi
+
+Tahap 4
+Link Tutorial
+https://youtu.be/wOK0h9ausO4?list=PLFIM0718LjIX-xNEj9bSBuDmPw9FWGMgF&index=4
+1. Membuat fitur Update dan Delete
+2. Membuat fitur Soft Delete
+
+Tahap 5
+Link Tutorial
+https://www.youtube.com/watch?v=KtUNSjXMK1U&list=PLFIM0718LjIX-xNEj9bSBuDmPw9FWGMgF&index=5
+1. Buat database di hosting dan imporkan database dari aplikasi laravel localhost
+2. Upload aplikasi laravel localhost ke Github.com
+3. Masuk ke terminal hosting lewat SSH
+4. Clone aplikasi laravel di Github.com ke hosting lewat SSH (Putty): 'git clone https://github.com/okakzai/LaraMahasiswa.git'
+5. Hapus folder 'laramahasiswa.didinstudio.com': 'rm laramahasiswa.didinstudio.com -rf'
+6. Buat 'symbolic link': 'ln -s /home/didinst1/LaraMahasiswa/public /home/didinst1/laramahasiswa.didinstudio.com'
+7. Download vendor untuk LaraMahasiswa: ''composer install'
+8. Buat file .env: 'cp .env.example .env'
+9. Edit file .env: 'nano .env' kemudian keluar 'CTRL+o -> Enter -> CTRL+x'
+10. Generate key untuk .env: 'php artisan key:generate'
+11. Setting konfigurasi database di .nev: 'nano .env' -> CTRL+x -> Y -> Enter
